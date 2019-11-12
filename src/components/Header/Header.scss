@@ -1,0 +1,23 @@
+#header{
+    border: 1px solid black;
+    position: fixed;
+    width: inherit;
+    z-index: 50;
+    top: 1%;
+   #nav{ margin: 1%; }
+    li{
+        display: inline;
+        padding: .5em;
+    }
+    li .social-icons{
+        display: inline;
+        padding: .5em;
+    }
+    .left{ float: left; }
+    .right{ float: right; }
+    .center{
+        position: absolute;
+        right: 50%;
+        left: 50%;
+    }
+}
