@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import './App.css';
 
 import Header from './components/Header/Header';
-import Homepage from './pages/homepage/Homepage';
 
 class App extends Component {
   constructor(props){
@@ -16,8 +15,9 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <Header/>
-        <Homepage/>
+        <div id="grid-layout">
+          <Header/>
+        </div>
       </div>
     );
   }// end render

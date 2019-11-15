@@ -1,4 +1,13 @@
 .App {
+  display: grid;
   width: 90%;
   margin: 0 auto;
+}
+
+.grid-layout{
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: [header-start] 20% [header-end content-start] 80% [content-end];
+  grid-template-areas: 
+  "hd-1 hd-2 hd-3 hd-4 hd-5 hd-6"
+  "c-1 c-2 c-3 c-4 c-5 c-6";
 }

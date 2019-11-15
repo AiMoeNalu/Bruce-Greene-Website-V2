@@ -1,23 +1,27 @@
 #header{
-    border: 1px solid black;
-    position: fixed;
+    grid-column-start: hd-1;
+    grid-column-end: hd-6;
     width: inherit;
-    z-index: 50;
     top: 1%;
-   #nav{ margin: 1%; }
-    li{
+   #nav{ 
+        margin: 1%;
+        border: 1px solid black;
+        overflow: auto;
+        li{
         display: inline;
         padding: .5em;
+        }
+        li.social-icons{
+            display: inline;
+            padding: .5em;
+        }
+        .left{ float: left; }
+        .right{ float: right; }
+        .center{
+            position: absolute;
+            right: 50%;
+            left: 50%;
+        }
     }
-    li .social-icons{
-        display: inline;
-        padding: .5em;
-    }
-    .left{ float: left; }
-    .right{ float: right; }
-    .center{
-        position: absolute;
-        right: 50%;
-        left: 50%;
-    }
+    
 }
