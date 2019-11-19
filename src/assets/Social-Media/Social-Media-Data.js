@@ -6,22 +6,22 @@ const SOCIAL_MEDIA_DATA = [
     {
         "Name": "Twitch",
         "Link": null,
-        "Icon": "Icons/twitch.svg"
+        "Icon": "twitch.svg"
     },
     {
         "Name": "Youtube",
         "Link": null,
-        "Icon": "Icons/youtube.svg"
+        "Icon": "youtube.svg"
     },
     {
         "Name": "Twitter",
         "Link": null,
-        "Icon": "Icons/twitter.svg"
+        "Icon": "twitter.svg"
     },
     {
         "Name": "Instagram",
         "Link": null,
-        "Icon": "Icons/instagram.svg"
+        "Icon": "instagram.svg"
     }
 ];
 
