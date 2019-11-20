@@ -4,7 +4,7 @@ import './Homepage.scss';
 
 const Homepage = () => (
     <div id='homepage'>
-        HEADER
+        HOMEPAGE
     </div>
 );
 
