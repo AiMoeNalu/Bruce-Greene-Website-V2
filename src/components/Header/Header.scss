@@ -3,10 +3,12 @@
     grid-column-end: hd-6;
     width: inherit;
     top: 1%;
-   #nav{ 
-        margin: 1%;
-        border: 1px solid black;
-        overflow: auto;
+   #nav{
+       display: grid;
+       padding: 0;
+       border: 1px solid black;
+       grid-template-columns: [social-start] 1fr [social-end logo-start] 1fr [logo-end options-start] 1fr [options-end]; 
+       grid-template-rows: auto;
         li{
         display: inline;
         padding: .5em;
@@ -15,12 +17,24 @@
             display: inline;
             padding: .5em;
         }
-        .left{ float: left; }
-        .right{ float: right; }
+        .left{ 
+            grid-column-start: social-start;
+            grid-column-end: social-end;
+            justify-self: start;
+            align-self: center;
+            width: 100%;
+        }
+        .right{
+            grid-column-start: options-start;
+            grid-column-end: options-end;
+            align-self: center;
+            justify-self: end;
+        }
         .center{
-            position: absolute;
-            right: 50%;
-            left: 50%;
+            grid-column-start: logo-start;
+            grid-column-end: logo-end;
+            align-self: center;
+            justify-self: center;
         }
     }
     

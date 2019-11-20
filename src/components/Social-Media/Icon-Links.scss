@@ -1,4 +1,14 @@
 .social-icons{
     width: inherit;
-    a{ margin: 0 0.2%; }
+    div{
+        display: inline;
+    }
+    svg{
+        height: 100%;
+        width: 25px;
+        margin: 0 1%;
+        &:hover{
+            cursor: pointer;
+        }
+    }
 }

@@ -11,7 +11,8 @@
     "react-inlinesvg": "^1.1.7",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
-    "svg-react": "^1.0.9"
+    "svg-react": "^1.0.9",
+    "tslint": "^5.20.1"
   },
   "scripts": {
     "start": "react-scripts start",
