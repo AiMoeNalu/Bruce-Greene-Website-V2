@@ -6,8 +6,9 @@
 
 .grid-layout{
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: [header-start] 20% [header-end content-start] 80% [content-end];
+  grid-template-rows: [header-start] 1fr [header-end content-start] 3fr [content-end footer-start] 1fr [footer-end];
   grid-template-areas: 
   "hd-1 hd-2 hd-3 hd-4 hd-5 hd-6"
-  "c-1 c-2 c-3 c-4 c-5 c-6";
+  "c-1 c-2 c-3 c-4 c-5 c-6"
+  "f-1 f-2 f-3 f-4 f-5 f-6";
 }

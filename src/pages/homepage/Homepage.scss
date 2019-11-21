@@ -1,3 +1,49 @@
 #homepage{
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: max-content max-content max-content;
+    grid-template-areas: 
+    "a1 a2 a3 a4"
+    "b1 b2 b3 b4"
+    "c1 c2 c3 c4";
+    #twitch-embed{
+        grid-row-start: a1;
+        grid-column-start: a1;
+        grid-column-end: a3;
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid black;
+    }
+    #donate-component{
+        grid-row-start: a1;
+        grid-column-start: a4;
+        grid-column-end: a4;
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid black;
+    }
+    #store-preview{
+        grid-row-start: b1;
+        grid-column-start: b1;
+        grid-column-end: b4;
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid black;
+    }
+    #community-leaderboards{
+        grid-row-start: c1;
+        grid-column-start: c1;
+        grid-column-end: c2;
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid black;
+    }
+    #community-events{
+        grid-row-start: c1;
+        grid-column-start: c3;
+        grid-column-end: c4;
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid black;
+    }
 }

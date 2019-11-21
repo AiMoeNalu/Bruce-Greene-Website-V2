@@ -1,11 +1,11 @@
 #header{
     grid-column-start: hd-1;
     grid-column-end: hd-6;
-    width: inherit;
     top: 1%;
    #nav{
        display: grid;
        padding: 0;
+       margin: 1% 0;
        border: 1px solid black;
        grid-template-columns: [social-start] 1fr [social-end logo-start] 1fr [logo-end options-start] 1fr [options-end]; 
        grid-template-rows: auto;

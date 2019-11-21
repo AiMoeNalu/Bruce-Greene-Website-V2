@@ -2,14 +2,14 @@ import React, {Component} from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 import './App.css';
 
 import Header from './components/Header/Header';
 import Homepage from './pages/homepage/Homepage';
+import Footer from './components/Footer/Footer';
 
 class App extends Component {
   constructor(props){
@@ -25,7 +25,9 @@ class App extends Component {
       <div className="App">
         <div id="grid-layout">
           <Router>
-            <Header/>
+            <Header/> 
+            {/*! Need to make Header Sticky */}
+            {/*! BIG-LOGO-HEADER COMPONENT */}
 
             <Switch>
               <Route exact path='/' component={Homepage}>
@@ -34,6 +36,8 @@ class App extends Component {
                 DONATE
               </Route>
             </Switch>
+
+            <Footer/>
           </Router>
         </div>
       </div>

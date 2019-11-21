@@ -8,8 +8,8 @@ const Header = (props) => (
     <div id='header'>
         <ul id="nav">
             <li className='left'><IconLinks/></li>
-            <li className='center'><span>Logo</span></li>
-            <li className='right'><span>Options</span></li>
+            <li className='center'><span>Bruce-Greene-Logo</span></li>
+            <li className='right'><span>Donate   Events   Options   Login</span></li>
         </ul>
     </div>
 );
