@@ -7,6 +7,7 @@ import {
 
 import './App.css';
 
+import HeaderCanvas from './components/Header-Canvas/HeaderCanvas';
 import Header from './components/Header/Header';
 import Homepage from './pages/homepage/Homepage';
 import Footer from './components/Footer/Footer';
@@ -26,9 +27,9 @@ class App extends Component {
         <div id="grid-layout">
           <Router>
             <Header/> 
-            {/*! Need to make Header Sticky */}
-            {/*! BIG-LOGO-HEADER COMPONENT */}
-
+            {/**Create a Conditional for HeaderCanvas to only display when on Homepage */}
+            <HeaderCanvas/>
+            
             <Switch>
               <Route exact path='/' component={Homepage}>
               </Route>
