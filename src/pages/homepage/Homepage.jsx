@@ -3,15 +3,14 @@ import React from 'react';
 import './Homepage.scss';
 
 import ReactTwitchEmbedVideo from "react-twitch-embed-video";
+import DonateForm from '../../components/Donate-Form/DonateForm';
 
 const Homepage = () => (
     <div id='homepage'>
         <div className='aspect-ratio'>
              <ReactTwitchEmbedVideo id='twitch-embed' channel="brucegreene" layout="video"/>
         </div>
-        <div id='donate-component'>
-            donate-component
-        </div>
+        <DonateForm/>
         <div id='store-preview'>
             store-preview
         </div>
