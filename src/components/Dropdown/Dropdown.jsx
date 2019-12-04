@@ -2,18 +2,26 @@ import React from 'react';
 
 import './Dropdown.scss';
 
-const Dropdown = () => (
+const Dropdown = ( {currencyData, onCurrencySelect} ) => {
+    return(
     <div id='currency-select'>
         <div className="dropdown">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
+            <div className="dropbtn"><span>↓</span> USD</div>
+            <div className="dropdown-content">
                 <ul>
-                    <li>USD</li>
-                    <li>CAN</li>
+                    {
+                        currencyData.map( ({abbreviation, symbol, id}) => (
+                            <li 
+                            onClick={onCurrencySelect}
+                            value={id}
+                            key={id}
+                            >
+                            {abbreviation}</li>
+                    ))}
                 </ul>
             </div>
         </div>
     </div>
-);
+    )};
 
 export default Dropdown;
