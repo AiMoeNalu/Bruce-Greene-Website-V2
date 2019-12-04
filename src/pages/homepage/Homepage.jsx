@@ -8,7 +8,7 @@ import DonateForm from '../../components/Donate-Form/DonateForm';
 const Homepage = () => (
     <div id='homepage'>
         <div className='aspect-ratio'>
-             <ReactTwitchEmbedVideo id='twitch-embed' channel="brucegreene" layout="video"/>
+             <ReactTwitchEmbedVideo id='twitch-embed' channel="brucegreene"/>
         </div>
         <DonateForm/>
         <div id='store-preview'>

@@ -21,16 +21,17 @@ class DonateForm extends React.Component{
         }
     }   
 
-    onCurrencySelect = (e) => {
-        console.log(e.value);
+    onSelect = (e) => {
+        console.log(e.target);
     } 
 
     render(){
-        const {currencyData} = this.state;
+        const {currencyData, currency} = this.state;
+        const {onSelect} = this;
         return(
             <form id="donate-component">
                 <UsernameInput/>
-                <Dropdown currencyData={currencyData} onCurrencySelect={this.onCurrencySelect}/>
+                <Dropdown text={currency} dropdownList={currencyData} onSelect={onSelect}/>
                 <DonateAmountInput/>
             </form>
         )}
