@@ -10,6 +10,7 @@ import './App.css';
 import HeaderCanvas from './components/Header-Canvas/HeaderCanvas';
 import Header from './components/Header/Header';
 import Homepage from './pages/homepage/Homepage';
+import SignInAndSignUp from './pages/Sign-In-And-Sign-Up/Sign-In-And-Sign-Up';
 import Footer from './components/Footer/Footer';
 
 class App extends Component {
@@ -17,22 +18,22 @@ class App extends Component {
     super(props);
 
     this.state = {
-      currentUser: null
+      currentUser: null,
     }
   }// end constructor
-  
+
   render(){
     return (
       <div className="App">
         <div id="grid-layout">
           <Router>
-            <Header/> 
+            <Header handlePageSelect={this.handlePageSelect}/> 
             {/**Create a Conditional for HeaderCanvas to only display when on Homepage */}
             <HeaderCanvas/>
             
             <Switch>
-              <Route exact path='/' component={Homepage}>
-              </Route>
+              <Route exact path='/' component={Homepage}/>
+              <Route exact path='/signin' component={SignInAndSignUp}/>
               <Route exact path='/donate'>
                 DONATE
               </Route>
