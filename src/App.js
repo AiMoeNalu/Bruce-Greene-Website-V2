@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  NavLink
 } from "react-router-dom";
 
 import './App.css';
@@ -19,15 +20,21 @@ class App extends Component {
 
     this.state = {
       currentUser: null,
+      navLinks:[
+      <li><NavLink to='/donate'>Donate</NavLink></li>,
+      <li><NavLink to='/events'>Events</NavLink></li>,
+      <li><NavLink to='/store'>store</NavLink></li>,
+      <li><NavLink to='/signin'>Login</NavLink></li>]
     }
   }// end constructor
 
   render(){
+    const {navLinks} = this.state;
     return (
       <div className="App">
         <div id="grid-layout">
           <Router>
-            <Header handlePageSelect={this.handlePageSelect}/> 
+            <Header navLinks={navLinks}/> 
             {/**Create a Conditional for HeaderCanvas to only display when on Homepage */}
             <HeaderCanvas/>
             
