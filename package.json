@@ -13,7 +13,7 @@
     "react-inlinesvg": "^1.1.7",
     "react-input-mask": "^2.0.4",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0",
+    "react-scripts": "5.0.1",
     "react-twitch-embed-video": "^1.1.2",
     "svg-react": "^1.0.9",
     "tslint": "^5.20.1"
